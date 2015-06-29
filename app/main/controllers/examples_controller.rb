@@ -1,14 +1,20 @@
+require 'examples/lib/click_on_an_image'
 module Main
-  require 'opal-phaser'
-  puts "test"
   class ExamplesController < Volt::ModelController
     model :page
     
     def index
+      puts "index"
     end
-    
+
     def template
-      page._example = params._example
+      puts "template"
     end
+
+    def template_ready
+      puts "template ready"
+      Game.new
+    end
+
   end
 end
