@@ -1,0 +1,44 @@
+// Place your apps css here
+body {
+  background-color: #993333;
+}
+a {
+  color: #68CACB;
+}
+a:hover {
+  color: #3E797A;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+}
+#header_text {
+  color: white;
+  text-shadow: 0 0 15px blue;
+  text-align: center;
+}
+#header_text_left {
+  color: white;
+  text-shadow: 0 0 15px blue;
+  text-align: left;
+}
+#description {
+  background-color: #AC5D5D;
+  
+  color: white;
+  font-size: 20px;
+  
+  padding: 5px;
+  
+  border-radius: 5px;
+}
+#example {
+  width: 800px;
+  height: 600px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 5px;
+}
+#copyright {
+  color: gray;
+}
