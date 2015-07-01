@@ -1,5 +1,10 @@
 require 'examples/lib/click_on_an_image'
 require 'examples/lib/image_follow_input'
+require 'examples/lib/load_an_animation'
+require 'examples/lib/load_an_image'
+require 'examples/lib/move_an_image'
+require 'examples/lib/render_text'
+require 'examples/lib/tween_an_image'
 require 'pp'
 
 module Main
@@ -22,6 +27,16 @@ module Main
         $example = ClickOnAnImage::Game.new
       elsif params._example == "image_follow_input"
         $example = ImageFollowInput::Game.new
+      elsif params._example == "load_an_animation"
+        $example = LoadAnAnimation::Game.new
+      elsif params._example == "load_an_image"
+        $example = LoadAnImage::Game.new
+      elsif params._example == "move_an_image"
+        $example = MoveAnImage::Game.new
+      elsif params._example == "render_text"
+        $example = RenderText::Game.new
+      elsif params._example == "tween_an_image"
+        $example = TweenAnImage::Game.new
       end
     end
   end
