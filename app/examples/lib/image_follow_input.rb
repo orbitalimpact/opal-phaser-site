@@ -45,7 +45,7 @@ if RUBY_ENGINE == 'opal'
       def initialize
         @phaser_game = Phaser::Game.new(width: 800, height: 600, renderer: Phaser::AUTO, parent: "example")
         state        = MainState.new(@phaser_game)
-        game.state.add(:main, state, true)
+        @phaser_game.state.add(:main, state, true)
       end
     end
 
