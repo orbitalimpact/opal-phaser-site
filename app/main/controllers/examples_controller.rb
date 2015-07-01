@@ -11,10 +11,13 @@ module Main
       puts "template"
     end
 
-    def template_ready
-      puts "template ready"
-      Game.new
+    def before_template_remove
+      $game.phaser_game.destroy
     end
 
+    def template_ready
+      puts "template ready"
+      $game = Game.new
+    end
   end
 end

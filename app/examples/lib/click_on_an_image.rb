@@ -33,10 +33,11 @@ if RUBY_ENGINE == 'opal'
   end
 
   class Game
+    attr_reader :phaser_game
     def initialize
-      game  = Phaser::Game.new(width: 800, height: 600, renderer: Phaser::AUTO, parent: "example")
-      state = MainState.new(game)
-      game.state.add(:main, state, true)
+      @phaser_game  = Phaser::Game.new(width: 800, height: 600, renderer: Phaser::AUTO, parent: "example")
+      state = MainState.new(@phaser_game)
+      @phaser_game.state.add(:main, state, true)
     end
   end
 
