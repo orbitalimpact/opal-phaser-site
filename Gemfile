@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'volt', '0.9.4pre1'
 gem 'volt-mongo'
-gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser'
+gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
 # The following gem's are optional for themeing
 # Twitter bootstrap
