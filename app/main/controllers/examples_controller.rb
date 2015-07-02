@@ -1,10 +1,10 @@
-require 'examples/lib/click_on_an_image'
-require 'examples/lib/image_follow_input'
-require 'examples/lib/load_an_animation'
-require 'examples/lib/load_an_image'
-require 'examples/lib/move_an_image'
-require 'examples/lib/render_text'
-require 'examples/lib/tween_an_image'
+require 'examples/lib/basics/click_on_an_image'
+require 'examples/lib/basics/image_follow_input'
+require 'examples/lib/basics/load_an_animation'
+require 'examples/lib/basics/load_an_image'
+require 'examples/lib/basics/move_an_image'
+require 'examples/lib/basics/render_text'
+require 'examples/lib/basics/tween_an_image'
 require 'pp'
 
 module Main
