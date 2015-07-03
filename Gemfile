@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'volt', '0.9.4pre1'
+gem 'volt', '0.9.4pre5'
 gem 'volt-mongo'
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
