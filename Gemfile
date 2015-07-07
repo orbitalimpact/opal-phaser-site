@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'volt', '0.9.4pre5'
+gem 'volt', '0.9.4'
 gem 'volt-mongo'
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
@@ -13,6 +13,9 @@ gem 'volt-bootstrap_jumbotron_theme', '~> 0.1.0'
 
 # User templates for login, signup, and logout menu.
 gem 'volt-user_templates', '~> 0.1.3'
+
+gem 'rbnacl'
+gem 'rbnacl-libsodium'
 
 group :development, :test do
   # Testing dependencies
