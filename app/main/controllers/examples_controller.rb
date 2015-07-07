@@ -26,14 +26,16 @@ module Main
       puts "index"
     end
 
-    def template
+    def example
     end
 
-    def before_template_remove
+    def before_example_remove
       $example.phaser_game.destroy
     end
 
-    def template_ready
+    def example_ready
+      puts $example_code
+      
       if params._category == "basics"
         if params._example == "click_on_an_image"
           $example = ClickOnAnImage::Game.new
