@@ -2,16 +2,15 @@ class FileTask < Volt::Task
   def read_files
     example_files = Hash.new
     
-    Dir.foreach("app/examples/lib") do |category|
-      next if category == "." || category == ".."
-      Dir.foreach("app/examples/lib/#{category}") do |file|
-        next if file == "." || file == ".."
-        example_file = File.open("app/examples/lib/#{category}/#{file}")
-        file_value   = example_file.read
+    Dir.foreach("opal-phaser-examples/examples") do |category|
+      next if category == "." || category == ".." || category == "assets"
+      Dir.foreach("opal-phaser-examples/examples/#{category}") do |example|
+        next if example == "." || example == ".."
+        example_file = File.open("opal-phaser-examples/examples/#{category}/#{example}/main.rb")
+        file_content   = example_file.read
         example_file.close
         
-        file_key = file.sub(".rb", "")
-        example_files[file_key] = file_value
+        example_files[example] = file_content
       end
     end
     
