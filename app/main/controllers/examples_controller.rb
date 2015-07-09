@@ -27,6 +27,9 @@ module Main
     end
 
     def example
+      FileTask.read_files.then do |example_files|
+        page._example_code = example_files[params._example]
+      end
     end
 
     def before_example_remove
@@ -34,8 +37,6 @@ module Main
     end
 
     def example_ready
-      puts $example_code
-      
       if params._category == "basics"
         if params._example == "click_on_an_image"
           $example = ClickOnAnImage::Game.new
