@@ -1,3 +1,4 @@
+# NOTE: the following code is slightly different from the code in the opal-phaser-examples repository, for compatibility with VoltRb
 if RUBY_ENGINE == 'opal'
   module ChangeFrame
     require 'opal-phaser'
