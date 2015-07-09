@@ -1,0 +1,3 @@
+[submodule "opal-phaser-examples"]
+	path = opal-phaser-examples
+	url = https://github.com/orbitalimpact/opal-phaser-examples
