@@ -2,7 +2,6 @@
 if RUBY_ENGINE == 'opal'
   module DestroyAnimation
     require 'opal-phaser'
-    require 'pp'
 
     class Sprite
       def initialize(game)

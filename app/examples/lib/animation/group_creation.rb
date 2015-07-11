@@ -2,7 +2,6 @@
 if RUBY_ENGINE == 'opal'
   module GroupCreation
     require 'opal-phaser'
-    require 'pp'
 
     class SeaCreatures
       def initialize(game)

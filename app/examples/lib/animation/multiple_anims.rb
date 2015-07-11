@@ -2,7 +2,6 @@
 if RUBY_ENGINE == 'opal'
   module MultipleAnims
     require 'opal-phaser'
-    require 'pp'
     
     class Background
       attr_reader :undersea_key
