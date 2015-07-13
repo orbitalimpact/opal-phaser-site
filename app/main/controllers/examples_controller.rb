@@ -30,6 +30,15 @@ module Main
       FileTask.read_files.then do |example_files|
         page._example_code = example_files[params._example]
       end
+      
+      title = params._example.split("_")
+      title.each do |word|
+        current_index = title.index(word)
+        title[current_index] = word.capitalize
+      end
+      title = title.join(" ")
+      
+      page._title = title
     end
 
     def before_example_remove

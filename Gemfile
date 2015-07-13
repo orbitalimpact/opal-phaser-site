@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'volt', '0.9.4'
+gem 'volt', github: 'voltrb/volt'
 gem 'volt-mongo'
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
+
+gem 'faye-websocket', '0.9.2'
+gem 'websocket-driver', '0.5.4'
 
 # The following gem's are optional for themeing
 # Twitter bootstrap
