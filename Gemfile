@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'volt', github: 'voltrb/volt'
+gem 'volt', '0.9.5pre1'
 gem 'volt-mongo'
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
-gem 'faye-websocket', '0.9.2'
+gem 'faye-websocket'
 gem 'websocket-driver', '0.5.4'
 
 # The following gem's are optional for themeing
