@@ -3,8 +3,8 @@ Volt.configure do |config|
   config.db_driver = 'mongo'
   config.db_name = (config.app_name + '_' + Volt.env.to_s)
 
-  if ENV['MONGOLAB_URL'].present?
-    config.db_uri = ENV['MONGOLAB_URL'] # you will have to set this on heroku
+  if ENV['mongodb://opalphasersitedba:Jnvu3_fi4va@ds041432.mongolab.com:41432/heroku_hm4dc0g7'].present?
+    config.db_uri = ENV['mongodb://opalphasersitedba:Jnvu3_fi4va@ds041432.mongolab.com:41432/heroku_hm4dc0g7']
   else
     config.db_host = 'localhost'
     config.db_port = 27017
