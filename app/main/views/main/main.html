@@ -2,26 +2,25 @@
   {{ view main_path, "title", {controller_group: 'main'} }}
 
 <:Body>
-  <div class="container">
-    <div class="header">
-      <ul class="nav nav-pills pull-right">
-        <:nav href="/">Home</:nav>
-        <:nav href="/examples">Examples</:nav>
-        <:nav href="https://twitter.com/opalphaser">Twitter</:nav>
-        <:nav href="https://github.com/orbitalimpact/opal-phaser">GitHub</:nav>
-      </ul>
-      <a href="/">
-        <img id="logo" src="/assets/images/logo.png">
-      </a>
-    </div>
-
-    <:volt:notices />
-
-    {{ view main_path, 'body', {controller_group: 'main'} }}
-
-    <p class="copyright">&copy; Orbital Impact {{ Time.now.year }}</p>
-
+  <div class="nav" id="left">
+    <a href="/">Home</a>
+    <a href="/examples">Examples</a>
   </div>
+  
+  <a href="/">
+    <div class="logo"></div>
+  </a>
+  
+  <div class="nav" id="right">
+    <a href="https://twitter.com/opalphaser">Twitter</a>
+    <a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a>
+  </div>
+  
+  <:volt:notices />
+  
+  {{ view main_path, 'body', {controller_group: 'main'} }}
+  
+  <p class="copyright">&copy; Orbital Impact {{ Time.now.year }}</p>
 
 <:Nav>
   <li class="{{ if active_tab? }}active{{ end }}">

@@ -1,6 +1,9 @@
 // Place your apps css here
 body {
-  background-color: #993333;
+  background-image: url(/assets/images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #e0e4f1;
 }
 a {
   color: #68CACB;
@@ -8,41 +11,96 @@ a {
 a:hover {
   color: #3E797A;
 }
-#logo {
-  width: 50px;
-  height: 50px;
+
+.nav {
+  background-size: 100%;
+  
+  width: 45vw;
 }
+.nav#left {
+  background-image: url(/assets/images/bg_nav_left.png);
+  
+  float: left;
+}
+.nav#right {
+  background-image: url(/assets/images/bg_nav_right.png);
+  
+  float: right;
+  text-align: right;
+}
+.nav>a {
+  border-style: solid;
+  border-radius: 5px;
+  
+  color: white;
+  
+  text-transform: uppercase;
+  
+  font-size: 15px;
+  font-weight: bold;
+  
+  padding: 1.5px;
+  
+  margin-left: 3em;
+}
+.nav>a:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.logo {
+  background-image: url(/assets/images/logo.png);
+  background-size: 100%;
+  
+  display: inline-block;
+  
+  margin-left: 2em;
+  
+  width: 5vw;
+  height: 5vw;
+}
+.equation {
+  background-image: url(/assets/images/opal-phaser-equation.png);
+  
+  width: 65.6em;
+  height: 15em;
+  
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .header_text {
   color: white;
-  text-shadow: 0 0 15px blue;
+  text-shadow: 0 0 15px red;
   text-align: center;
 }
 .header_text_left {
   color: white;
-  text-shadow: 0 0 15px blue;
+  text-shadow: 0 0 15px red;
   text-align: left;
 }
+
 #description {
-  background-color: #AC5D5D;
-  
-  color: white;
   font-size: 20px;
-  
-  padding: 5px;
-  
-  border-radius: 5px;
 }
 .front_page_code {
   font-size: 15px;
   color: #527ACC;
 }
+
 #example {
+  margin-left: auto;
+  margin-right: auto;
+  
   width: 806px;
   height: 606px;
+  
   border-style: solid;
   border-color: gray;
   border-radius: 5px;
 }
+
 #copyright {
   color: gray;
 }
