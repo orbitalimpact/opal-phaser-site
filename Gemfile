@@ -21,8 +21,10 @@ gem 'volt-bootstrap_jumbotron_theme', '~> 0.1.0'
 # User templates for login, signup, and logout menu.
 gem 'volt-user_templates', '~> 0.1.3'
 
-# gem 'rbnacl'
-# gem 'rbnacl-libsodium'
+platform :ruby, :jruby do
+  gem 'rbnacl', require: false
+  gem 'rbnacl-libsodium', require: false
+end
 gem 'uglifier', '>= 2.4.0', require: false
 gem 'csso-rails', '~> 0.3.4', require: false
 
