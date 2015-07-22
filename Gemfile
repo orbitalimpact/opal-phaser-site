@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'volt', '0.9.5pre1'
+gem 'volt', '0.9.4'
 
 gem 'volt-mongo'
 

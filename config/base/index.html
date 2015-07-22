@@ -2,9 +2,13 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <%= javascript_tags %>
+    <% javascript_files.each do |js| %>
+      <script src="<%= js %>"></script>
+    <% end %>
 
-    <%= css_tags %>
+    <% css_files.each do |css| %>
+      <link href="<%= css %>" medila="all" rel="stylesheet" type="text/css" />
+    <% end %>
   </head>
   <body>
 
