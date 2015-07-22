@@ -10,6 +10,8 @@ Volt.configure do |config|
     config.db_port = 27017
   end
 
+  config.message_bus.disable_encryption = true
+
   # Your app secret is used for signing things like the user cookie so it can't
   # be tampered with.  A random value is generated on new projects that will work
   # without the need to customize.  Make sure this value doesn't leave your server.
