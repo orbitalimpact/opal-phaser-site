@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 ruby '2.2.2'
 
 gem 'volt', '0.9.5pre1'
+
 gem 'volt-mongo'
+
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
 gem 'faye-websocket'
@@ -21,6 +23,8 @@ gem 'volt-user_templates', '~> 0.1.3'
 
 # gem 'rbnacl'
 # gem 'rbnacl-libsodium'
+gem 'uglifier', '>= 2.4.0', require: false
+gem 'csso-rails', '~> 0.3.4', require: false
 
 group :development, :test do
   # Testing dependencies
