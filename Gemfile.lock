@@ -1,9 +1,10 @@
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: a9f89986193c4504b63a33bb684688c289d00a72
+  revision: c3559a2ef298e3439569fd84af6e827ad048f000
   specs:
     opal-phaser (0.3.0)
-      opal (>= 0.7.0, < 0.9.0)
+      opal (>= 0.8.0, <= 0.9.0)
+      opal-pixi
 
 GEM
   remote: https://rubygems.org/
@@ -51,6 +52,8 @@ GEM
       sourcemap (~> 0.1.0)
       sprockets (~> 3.1)
       tilt (>= 1.4)
+    opal-pixi (0.2.1)
+      opal (>= 0.7.0, < 0.9.0)
     opal-rspec (0.4.3)
       opal (>= 0.7.0, < 0.9)
     poltergeist (1.5.1)
@@ -103,7 +106,7 @@ GEM
       rack (~> 1.0)
     thor (0.19.1)
     tilt (2.0.1)
-    volt (0.9.5.pre1)
+    volt (0.9.5.pre2)
       bcrypt (~> 3.1.9)
       bundler (>= 1.5)
       concurrent-ruby (= 0.8.0)
@@ -145,7 +148,7 @@ DEPENDENCIES
   rspec (~> 3.2.0)
   selenium-webdriver (~> 2.43.0)
   thin (~> 1.6.0)
-  volt (= 0.9.5pre1)
+  volt (= 0.9.5pre2)
   volt-bootstrap (~> 0.0.10)
   volt-bootstrap_jumbotron_theme (~> 0.1.0)
   volt-mongo
