@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.2.2'
 
 gem 'volt', '0.9.5pre1'
 gem 'volt-mongo'
@@ -19,8 +19,8 @@ gem 'volt-bootstrap_jumbotron_theme', '~> 0.1.0'
 # User templates for login, signup, and logout menu.
 gem 'volt-user_templates', '~> 0.1.3'
 
-gem 'rbnacl'
-gem 'rbnacl-libsodium'
+# gem 'rbnacl'
+# gem 'rbnacl-libsodium'
 
 group :development, :test do
   # Testing dependencies
