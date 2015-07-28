@@ -7,7 +7,7 @@ class FileTask < Volt::Task
       Dir.foreach("opal-phaser-examples/examples/#{category}") do |example|
         next if example == "." || example == ".."
         example_file = File.open("opal-phaser-examples/examples/#{category}/#{example}/main.rb")
-        file_content   = example_file.read
+        file_content = example_file.read
         example_file.close
         
         example_files[example] = file_content
