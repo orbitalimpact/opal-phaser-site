@@ -16,6 +16,10 @@ require 'examples/lib/animation/load_texture'
 require 'examples/lib/animation/looped_animation'
 require 'examples/lib/animation/multiple_anims'
 
+require 'examples/lib/bitmap_data/alpha_mask'
+
+require 'examples/lib/sprites/dynamic-crop'
+
 require 'pp'
 
 module Main
@@ -81,6 +85,14 @@ module Main
           $example = LoopedAnimation::Game.new
         elsif params._example == "multiple_anims"
           $example = MultipleAnims::Game.new
+        end
+      elsif params._category == "bitmap_data"
+        if params._example == "alpha_mask"
+          $example = AlphaMask::Game.new
+        end
+      elsif params._category == "sprites"
+        if params._example == "dynamic-crop"
+          $example = DynamicCrop::Game.new
         end
       end
     end
