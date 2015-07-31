@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.2.2'
 
-gem 'volt', '0.9.5pre2'
+gem 'volt', '0.9.5pre3'
 gem 'volt-mongo'
 
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
