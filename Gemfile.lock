@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/voltrb/volt.git
-  revision: 4520f869be4be9b73e71401eda67238f46acf7e1
+  revision: 3754e070a6dd7a97bacf075e5ee35d9ad07ab6f5
   specs:
-    volt (0.9.5.pre2)
+    volt (0.9.5.pre4)
       bcrypt (~> 3.1.9)
       bundler (>= 1.5)
       concurrent-ruby (= 0.8.0)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: 3bcf8d57b498b9b43bb87102c0584e668e3e2c54
+  revision: d6e4be6ea5520432b884a7351db8bf7b5592245a
   specs:
     opal-phaser (0.3.0)
       opal (>= 0.8.0, <= 0.9.0)
@@ -73,8 +73,8 @@ GEM
       sourcemap (~> 0.1.0)
       sprockets (~> 3.1)
       tilt (>= 1.4)
-    opal-pixi (0.2.1)
-      opal (>= 0.7.0, < 0.9.0)
+    opal-pixi (0.3.4)
+      opal (>= 0.8.0, < 0.9.0)
     opal-rspec (0.4.3)
       opal (>= 0.7.0, < 0.9)
     poltergeist (1.5.1)
