@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: d6e4be6ea5520432b884a7351db8bf7b5592245a
+  revision: 0c2256d5890a4b30af142cd0d5e1e6d2e29fa7b0
   specs:
     opal-phaser (0.3.0)
       opal (>= 0.8.0, <= 0.9.0)
