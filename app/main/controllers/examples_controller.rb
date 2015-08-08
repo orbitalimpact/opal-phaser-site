@@ -95,6 +95,8 @@ module Main
           $example = DynamicCrop::Game.new
         end
       end
+      
+      `prettyPrint()`
     end
   end
 end
