@@ -11,3 +11,5 @@ component 'bootstrap_jumbotron_theme'
 component 'user_templates'
 
 component 'examples'
+
+javascript_file 'assets/js/prettify.js'
