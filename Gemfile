@@ -7,6 +7,8 @@ gem 'volt-mongo'
 
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
+gem 'volt-code_highlight', github: 'ylluminarious/volt-code_highlight'
+
 gem 'faye-websocket'
 gem 'websocket-driver', '0.5.4'
 

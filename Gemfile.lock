@@ -16,6 +16,12 @@ GIT
       thor (~> 0.19.0)
 
 GIT
+  remote: git://github.com/ylluminarious/volt-code_highlight.git
+  revision: d4b91f9c9db7600c6dd628445df933385096c6e2
+  specs:
+    volt-code_highlight (0.1.0)
+
+GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
   revision: 0c2256d5890a4b30af142cd0d5e1e6d2e29fa7b0
   specs:
@@ -165,6 +171,7 @@ DEPENDENCIES
   volt!
   volt-bootstrap (~> 0.0.10)
   volt-bootstrap_jumbotron_theme (~> 0.1.0)
+  volt-code_highlight!
   volt-mongo
   volt-user_templates (~> 0.1.3)
   websocket-driver (= 0.5.4)

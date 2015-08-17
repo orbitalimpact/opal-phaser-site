@@ -12,4 +12,4 @@ component 'user_templates'
 
 component 'examples'
 
-javascript_file 'assets/js/prettify.js'
+component 'code_highlight'
