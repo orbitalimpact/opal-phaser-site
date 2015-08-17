@@ -31,8 +31,8 @@ module Main
     end
 
     def example
-      FileTask.read_files.then do |example_files|
-        page._example_code = example_files[params._example]
+      ExampleSourceTask.read_source_files.then do |source_files|
+        page._example_code = source_files[params._example]
       end
       
       title = params._example.split("_")
@@ -95,8 +95,6 @@ module Main
           $example = DynamicCrop::Game.new
         end
       end
-      
-      `prettyPrint()`
     end
   end
 end
