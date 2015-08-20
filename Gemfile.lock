@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/voltrb/volt.git
-  revision: 01f20f8bec34f634439aa0ae17429bb94014abb5
+  revision: 6583bbe38084cfd1892e4f05d3e813d8183b8b6f
   specs:
     volt (0.9.5.pre4)
       bcrypt (~> 3.1.9)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: git://github.com/ylluminarious/volt-code_highlight.git
-  revision: d5fa13a84818d19a775249b1151027c2e87595e0
+  revision: 592e772aba805ca1e3ffc30d472adc97c3e7b997
   specs:
     volt-code_highlight (0.1.0)
 
