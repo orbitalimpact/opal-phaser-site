@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/voltrb/volt.git
-  revision: 3754e070a6dd7a97bacf075e5ee35d9ad07ab6f5
+  revision: 01f20f8bec34f634439aa0ae17429bb94014abb5
   specs:
     volt (0.9.5.pre4)
       bcrypt (~> 3.1.9)
@@ -17,13 +17,13 @@ GIT
 
 GIT
   remote: git://github.com/ylluminarious/volt-code_highlight.git
-  revision: d4b91f9c9db7600c6dd628445df933385096c6e2
+  revision: d5fa13a84818d19a775249b1151027c2e87595e0
   specs:
     volt-code_highlight (0.1.0)
 
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: 0c2256d5890a4b30af142cd0d5e1e6d2e29fa7b0
+  revision: 0eebabb8aedd6c6b90a3309374ea200cc328ea99
   specs:
     opal-phaser (0.3.0)
       opal (>= 0.8.0, <= 0.9.0)
@@ -55,8 +55,8 @@ GEM
       execjs (>= 1)
     daemons (1.2.3)
     diff-lcs (1.2.5)
-    eventmachine (1.0.7)
-    execjs (2.5.2)
+    eventmachine (1.0.8)
+    execjs (2.6.0)
     faye-websocket (0.10.0)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
@@ -125,7 +125,7 @@ GEM
       websocket (~> 1.0)
     slop (3.6.0)
     sourcemap (0.1.1)
-    sprockets (3.2.0)
+    sprockets (3.3.2)
       rack (~> 1.0)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
