@@ -13,3 +13,5 @@ component 'user_templates'
 component 'examples'
 
 component 'code_highlight'
+
+css_file "/assets/code_highlight/assets/css/sunburst.css"
