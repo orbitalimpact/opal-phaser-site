@@ -1,27 +1,63 @@
 <:Title>
   {{ view main_path, "title", {controller_group: 'main'} }}
 
-<:Body>
-  <div class="nav" id="left">
-    <a href="/">Home</a>
-    <a href="/examples">Examples</a>
-  </div>
-  
-  <a href="/">
-    <div class="logo"></div>
-  </a>
-  
-  <div class="nav" id="right">
-    <a href="https://twitter.com/opalphaser">Twitter</a>
-    <a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a>
-  </div>
+  <:Body>
+    <div class="nav" id="left">
+      <a class="logo_link" href="/">
+        <div class="logo"></div>
+      </a>
+      <a href="/examples">Examples</a>
+    </div>
+    
+    <div class="nav" id="right">
+      <a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a>
+      <a href="https://twitter.com/opalphaser">Twitter</a>
+      <a href="https://gitter.im/orbitalimpact/opal-phaser">Gitter</a>
+    </div>
   
   <:volt:notices />
+    
+    {{ view main_path, 'body', {controller_group: 'main'} }}
+    
+    <div id="footer">
+      <a class="logo_link" href="/">
+        <div class="logo" id="footer_logo"></div>
+      </a>
+      
+      <table class="table borderless" id="footer_content">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-md-2.5">Learning</th>
+            <th>Community</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td></td>
+            <td><a href="/examples">Examples</a></td>
+            <td><a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a></td>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="https://twitter.com/opalphaser">Twitter</a></td>
+          </tr>
+          
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="https://gitter.im/orbitalimpact/opal-phaser">Gitter</a></td>
+          </tr>
+          </tbody>
+        </table>
+        
+        <div id="copyright">
+          <p>&copy; Orbital Impact {{ Time.now.year }}</p>
+        </div>
   
-  {{ view main_path, 'body', {controller_group: 'main'} }}
-  
-  <p class="copyright">&copy; Orbital Impact {{ Time.now.year }}</p>
-
 <:Nav>
   <li class="{{ if active_tab? }}active{{ end }}">
     <a href="{{ attrs.href }}">{{ yield }}</a>
