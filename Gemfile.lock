@@ -1,29 +1,30 @@
 GIT
   remote: git://github.com/voltrb/volt.git
-  revision: 6583bbe38084cfd1892e4f05d3e813d8183b8b6f
+  revision: 04f00bbb9799af5c3e0dd0d2b76818398cbca396
   specs:
-    volt (0.9.5.pre4)
+    volt (0.9.5)
       bcrypt (~> 3.1.9)
       bundler (>= 1.5)
       concurrent-ruby (= 0.8.0)
       configurations (~> 2.0.0.pre)
       faye-websocket (~> 0.10.0)
       listen (~> 3.0.1)
-      opal (~> 0.8.0)
+      opal (>= 0.8.0, < 0.9)
       pry (~> 0.10.1)
       rack (~> 1.5.0)
       sass (~> 3.4.15)
+      sprockets-helpers (~> 1.2.1)
       thor (~> 0.19.0)
 
 GIT
   remote: git://github.com/ylluminarious/volt-code_highlight.git
-  revision: 592e772aba805ca1e3ffc30d472adc97c3e7b997
+  revision: e237ff5619561740b5bf6e5bd2fdaaf4f8093f0f
   specs:
     volt-code_highlight (0.1.0)
 
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: 0eebabb8aedd6c6b90a3309374ea200cc328ea99
+  revision: 0248d227a29c39a25ffb918242f814468ce0bedf
   specs:
     opal-phaser (0.3.0)
       opal (>= 0.8.0, <= 0.9.0)
@@ -95,7 +96,7 @@ GEM
     rack (1.5.5)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rb-fsevent (0.9.5)
+    rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rbnacl (3.2.0)
@@ -117,7 +118,7 @@ GEM
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
     rubyzip (1.1.7)
-    sass (3.4.16)
+    sass (3.4.18)
     selenium-webdriver (2.43.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
@@ -125,15 +126,17 @@ GEM
       websocket (~> 1.0)
     slop (3.6.0)
     sourcemap (0.1.1)
-    sprockets (3.3.2)
+    sprockets (3.3.4)
       rack (~> 1.0)
+    sprockets-helpers (1.2.1)
+      sprockets (>= 2.2)
     thin (1.6.3)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0)
       rack (~> 1.0)
     thor (0.19.1)
     tilt (2.0.1)
-    uglifier (2.7.1)
+    uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     volt-bootstrap (0.0.10)
