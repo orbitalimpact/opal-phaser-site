@@ -2,6 +2,9 @@
   {{ _title }}
   
 <:Body>
+  <h1 class="header_text_center">Opal-Phaser Examples</h1>
+  
+  {{ view "example_list" }}
+  
   <div id="example"></div>
-  <h1 class="header_text_center">Source Code:</h1>
-  <:code_highlight language="ruby">{{ page._example_code }}</:code_highlight>
+  <:code_highlight id="example_source" language="ruby">{{ page._example_code }}</:code_highlight>
