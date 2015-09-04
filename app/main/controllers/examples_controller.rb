@@ -25,32 +25,40 @@ require 'pp'
 module Main
   class ExamplesController < Volt::ModelController
     model :page
-
-    def index
-      puts "index"
-    end
-
+    
     def example
-      ExampleSourceTask.read_source_files.then do |source_files|
-        page._example_code = source_files[params._example]
-      end
-      
-      title = params._example.split("_")
-      title.each do |word|
-        current_index = title.index(word)
-        title[current_index] = word.capitalize
-      end
-      title = title.join(" ")
-      
-      page._title = title
     end
-
+    
     def before_example_remove
-      $example.phaser_game.destroy
+      @params_watch.stop
     end
-
+    
     def example_ready
-      if params._category == "basics"
+      @params_watch = proc do
+        if $example
+          if $example.phaser_game.is_booted?
+            $example.phaser_game.destroy
+          end
+        end
+        
+        ExampleSourceTask.read_source_files.then do |source_files|
+          $example_source    = source_files[params._example]
+          page._example_code = $example_source
+        end
+
+        if params._example
+          title = params._example.split("_")
+          title.each do |word|
+            current_index = title.index(word)
+            title[current_index] = word.capitalize
+          end
+          title = title.join(" ")
+          
+          page._title = title
+        else
+          page._title = "Examples"
+        end
+        
         if params._example == "click_on_an_image"
           $example = ClickOnAnImage::Game.new
         elsif params._example == "image_follow_input"
@@ -65,9 +73,7 @@ module Main
           $example = RenderText::Game.new
         elsif params._example == "tween_an_image"
           $example = TweenAnImage::Game.new
-        end
-      elsif params._category == "animation"
-        if params._example == "animation_events"
+        elsif params._example == "animation_events"
           $example = AnimationEvents::Game.new
         elsif params._example == "change_frame"
           $example = ChangeFrame::Game.new
@@ -85,16 +91,13 @@ module Main
           $example = LoopedAnimation::Game.new
         elsif params._example == "multiple_anims"
           $example = MultipleAnims::Game.new
-        end
-      elsif params._category == "bitmap_data"
-        if params._example == "alpha_mask"
+        elsif params._example == "alpha_mask"
           $example = AlphaMask::Game.new
-        end
-      elsif params._category == "sprites"
-        if params._example == "dynamic-crop"
+        elsif params._example == "dynamic-crop"
           $example = DynamicCrop::Game.new
         end
       end
+      .watch!
     end
   end
 end
