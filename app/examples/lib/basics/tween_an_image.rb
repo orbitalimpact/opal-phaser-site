@@ -4,7 +4,7 @@ if RUBY_ENGINE == 'opal'
     class Image
       def initialize(game)
         @sprite_key = "einstein"
-        @sprite_url = "/assets/pics/ra_einstein.png"
+        @sprite_url = "/app/examples/assets/pics/ra_einstein.png"
         @game       = game
       end
   

@@ -5,7 +5,7 @@ if RUBY_ENGINE == 'opal'
 
     class DynamicCrop < Phaser::State
       def preload
-        game.load.image('trsi', '/assets/pics/trsipic1_lazur.jpg')
+        game.load.image('trsi', '/app/examples/assets/pics/trsipic1_lazur.jpg')
       end
 
       def create

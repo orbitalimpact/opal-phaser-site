@@ -8,7 +8,7 @@ if RUBY_ENGINE == 'opal'
   
       def initialize(game)
         @sprite_key = "lazur"
-        @sprite_url = "/assets/pics/thorn_lazur.png"
+        @sprite_url = "/app/examples/assets/pics/thorn_lazur.png"
         @game       = game
       end
   
@@ -28,7 +28,7 @@ if RUBY_ENGINE == 'opal'
   
       def initialize(game)
         @sprite_key    = "mummy"
-        @sprite_url    = "/assets/sprites/metalslug_mummy37x45.png"
+        @sprite_url    = "/app/examples/assets/sprites/metalslug_mummy37x45.png"
         @animation_key = "walk"
         @game          = game
       end

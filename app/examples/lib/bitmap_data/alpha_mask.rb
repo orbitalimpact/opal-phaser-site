@@ -5,8 +5,8 @@ if RUBY_ENGINE == 'opal'
   module AlphaMask
     class AlphaMask < Phaser::State
       def preload
-        game.load.image('pic', '/assets/pics/questar.png')
-        game.load.image('mask', '/assets/pics/mask-test2.png')
+        game.load.image('pic', '/app/examples/assets/pics/questar.png')
+        game.load.image('mask', '/app/examples/assets/pics/mask-test2.png')
       end
 
       def create

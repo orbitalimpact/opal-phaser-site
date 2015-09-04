@@ -6,7 +6,7 @@ if RUBY_ENGINE == 'opal'
     class Orb
       def initialize(game)
         @sprite_key = "orb"
-        @sprite_url = "/assets/sprites/orb-blue.png"
+        @sprite_url = "/app/examples/assets/sprites/orb-blue.png"
         @game       = game
       end
   

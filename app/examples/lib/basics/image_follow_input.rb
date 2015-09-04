@@ -7,7 +7,7 @@ if RUBY_ENGINE == 'opal'
     class Logo
       def initialize(game)
         @sprite_key = "phaser"
-        @sprite_url = "/assets/sprites/phaser.png"
+        @sprite_url = "/app/examples/assets/sprites/phaser.png"
         @game       = game
       end
 

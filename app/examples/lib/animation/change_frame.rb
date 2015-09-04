@@ -6,7 +6,7 @@ if RUBY_ENGINE == 'opal'
     class Background
       def initialize(game)
         @sprite_key = "undersea"
-        @sprite_url = "/assets/pics/undersea.jpg"
+        @sprite_url = "/app/examples/assets/pics/undersea.jpg"
         @game       = game
       end
   
@@ -25,8 +25,8 @@ if RUBY_ENGINE == 'opal'
   
       def initialize(game)
         @atlas_key  = "seacreatures"
-        @atlas_img  = "/assets/sprites/seacreatures_json.png"
-        @atlas_json = "/assets/sprites/seacreatures_json.json"
+        @atlas_img  = "/app/examples/assets/sprites/seacreatures_json.png"
+        @atlas_json = "/app/examples/assets/sprites/seacreatures_json.json"
         @game       = game
       end
   

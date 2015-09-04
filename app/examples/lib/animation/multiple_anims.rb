@@ -9,10 +9,10 @@ if RUBY_ENGINE == 'opal'
       
       def initialize(game)
         @undersea_key = "undersea"
-        @undersea_url = "/assets/pics/undersea.jpg"
+        @undersea_url = "/app/examples/assets/pics/undersea.jpg"
     
         @coral_key    = "coral"
-        @coral_url    = "/assets/pics/seabed.png"
+        @coral_url    = "/app/examples/assets/pics/seabed.png"
     
         @game         = game
       end
@@ -27,8 +27,8 @@ if RUBY_ENGINE == 'opal'
       def initialize(game)
         @game    = game
         @img_key = 'seacreatures'
-        @img_url = '/assets/sprites/seacreatures.png'
-        @xml_url = '/assets/sprites/seacreatures.xml'
+        @img_url = '/app/examples/assets/sprites/seacreatures.png'
+        @xml_url = '/app/examples/assets/sprites/seacreatures.xml'
       end
       
       def preload

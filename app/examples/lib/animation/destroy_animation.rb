@@ -6,7 +6,7 @@ if RUBY_ENGINE == 'opal'
     class Sprite
       def initialize(game)
         @sprite_key    = "mummy"
-        @sprite_url    = "/assets/sprites/metalslug_mummy37x45.png"
+        @sprite_url    = "/app/examples/assets/sprites/metalslug_mummy37x45.png"
         @frames_width  = 37
         @frames_height = 45
         @max_frames    = 18

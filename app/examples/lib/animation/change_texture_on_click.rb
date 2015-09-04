@@ -10,11 +10,11 @@ if RUBY_ENGINE == 'opal'
   
       def initialize(game)
         @bot_key      = "bot"
-        @bot_img_url  = "/assets/sprites/running_bot.png"
-        @bot_json_url = "/assets/sprites/running_bot.json"
+        @bot_img_url  = "/app/examples/assets/sprites/running_bot.png"
+        @bot_json_url = "/app/examples/assets/sprites/running_bot.json"
     
         @mummy_key = "mummy"
-        @mummy_url = "/assets/sprites/metalslug_mummy37x45.png"
+        @mummy_url = "/app/examples/assets/sprites/metalslug_mummy37x45.png"
     
         @game = game
       end

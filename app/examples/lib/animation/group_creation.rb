@@ -6,12 +6,12 @@ if RUBY_ENGINE == 'opal'
     class SeaCreatures
       def initialize(game)
         @octopus_key      = "seacreatures"
-        @octopus_img_url  = "/assets/sprites/seacreatures_json.png"
-        @octopus_json_url = "/assets/sprites/seacreatures_json.json"
+        @octopus_img_url  = "/app/examples/assets/sprites/seacreatures_json.png"
+        @octopus_json_url = "/app/examples/assets/sprites/seacreatures_json.json"
         @undersea_key     = "undersea"
-        @undersea_url     = "/assets/pics/undersea.jpg"
+        @undersea_url     = "/app/examples/assets/pics/undersea.jpg"
         @coral_key        = "coral"
-        @coral_url        = "/assets/pics/seabed.png"
+        @coral_url        = "/app/examples/assets/pics/seabed.png"
     
         @game             = game
       end

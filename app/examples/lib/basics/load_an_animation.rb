@@ -4,8 +4,8 @@ if RUBY_ENGINE == 'opal'
     class Bot
       def initialize(game)
         @sprite_key = "bot"
-        @sprite_url = "/assets/sprites/running_bot.png"
-        @json_url   = "/assets/sprites/running_bot.json"
+        @sprite_url = "/app/examples/assets/sprites/running_bot.png"
+        @json_url   = "/app/examples/assets/sprites/running_bot.json"
         @game       = game
       end
   
