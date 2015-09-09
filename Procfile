@@ -1,1 +1,1 @@
-web: bundle exec thin start -p $PORT -e $RACK_ENV 2>&1 > tmp/logs.txt
+web: MAPS=false bundle exec thin start -p $PORT -e $RACK_ENV 2>&1 > tmp/logs.txt
