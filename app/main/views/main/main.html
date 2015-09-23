@@ -2,62 +2,58 @@
   {{ view main_path, "title", {controller_group: 'main'} }}
 
   <:Body>
-    <div class="nav" id="left">
-      <a class="logo_link" href="/">
-        <div class="logo"></div>
-      </a>
-      <a href="/examples">Examples</a>
+    <div class="nav">
+      <div class="container">
+        <div class="col-xs-2">
+          <a class="logo_link" href="/">
+            <div class="logo"></div>
+          </a>
+        </div>
+        <div class="col-xs-10 text-left">
+          <a href="/examples">Examples</a>
+          <a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a>
+          <a href="https://twitter.com/opalphaser">Twitter</a>
+          <a href="https://gitter.im/orbitalimpact/opal-phaser">Gitter</a>
+        </div>
+      </div>
     </div>
-    
-    <div class="nav" id="right">
-      <a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a>
-      <a href="https://twitter.com/opalphaser">Twitter</a>
-      <a href="https://gitter.im/orbitalimpact/opal-phaser">Gitter</a>
-    </div>
-  
+
   <:volt:notices />
-    
-    {{ view main_path, 'body', {controller_group: 'main'} }}
-    
+
+    <div class="container">
+      {{ view main_path, 'body', {controller_group: 'main'} }}
+    </div>
+
     <div id="footer">
-      <a class="logo_link" href="/">
-        <div class="logo" id="footer_logo"></div>
-      </a>
-      
-      <table class="table borderless" id="footer_content">
-        <thead>
-          <tr>
-            <th></th>
-            <th class="col-md-2.5">Learning</th>
-            <th>Community</th>
-          </tr>
-        </thead>
-        
-        <tbody>
-          <tr>
-            <td></td>
-            <td><a href="/examples">Examples</a></td>
-            <td><a href="https://github.com/orbitalimpact/opal-phaser">GitHub</a></td>
-          </tr>
-          
-          <tr>
-            <td></td>
-            <td></td>
-            <td><a href="https://twitter.com/opalphaser">Twitter</a></td>
-          </tr>
-          
-          <tr>
-            <td></td>
-            <td></td>
-            <td><a href="https://gitter.im/orbitalimpact/opal-phaser">Gitter</a></td>
-          </tr>
-          </tbody>
-        </table>
-        
-        <div id="copyright">
+      <div class="container">
+        <div class="col-xs-12 col-sm-4">
+          <a class="logo_link" href="/">
+            <div class="logo" id="footer_logo"></div>
+          </a>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+          <h3>Learning</h3>
+          <ul>
+            <li><a href="/examples">Examples</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <h3>Community</h3>
+
+          <ul>
+            <li><a href="http://github.com/orbitalimpact/opal-phaser">GitHub</a></li>
+            <li><a href="https://twitter.com/opalphaser">Twitter</a></li>
+            <li><a href="https://gitter.im/orbitalimpact/opal-phaser">Gitter</a></li>
+          </ul>
+        </div>
+
+        <div id="copyright" class="col-xs-12">
           <p>&copy; Orbital Impact {{ Time.now.year }}</p>
         </div>
-  
+      </div>
+    </div>
+
 <:Nav>
   <li class="{{ if active_tab? }}active{{ end }}">
     <a href="{{ attrs.href }}">{{ yield }}</a>

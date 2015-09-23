@@ -5,16 +5,27 @@ body {
   background-color: #e0e4f1;
 }
 
+@media (screen and max-width: 400px) {
+  body {
+    background-size: 100% 25%;
+  }
+}
+
+.jumbotron h1 {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
 a {
   background-color: rgba(0, 0, 0, 0.5);
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  padding: 2px 5px;
   color: white;
 }
 
 a:hover {
   color: white;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.7);
 }
 
 hr {
@@ -24,88 +35,80 @@ hr {
 .nav {
   background-size: 100%;
   background-repeat: no-repeat;
-  
-  margin-top: -1.4em;
-  margin-bottom: 4.642857142857143em;
+
   padding: 5px;
-  height: 2.9vw;
-  width: 45vw;
+  background: linear-gradient(to bottom, RGBA(98, 97, 98, 0.9) 0%, RGBA(64, 64, 64, 0.5) 100%);
+  text-align: center;
 }
 
-.nav#left {
-  background-image: url(../images/bg_nav_left);
-  
-  float: left;
+@media (screen and min-width: 500px) {
+  .nav {
+    height: 40px;
+  }
 }
 
-.nav#right {
-  background-image: url(../images/bg_nav_right);
-  
-  float: right;
-  text-align: right;
-}
+.nav a { display: inline-block }
+.nav a:not(.logo_link) {
+  background-color: transparent;
 
-.nav>a:not(.logo_link) {
-  background-color: rgba(0, 0, 0, 0);
-  
-  border-color: white;
-  border-style: solid;
-  border-radius: 5px;
-  
+  border: none;
+
   color: white;
-  
   text-transform: uppercase;
-  
   text-shadow: none;
-  
+
   font-size: 15px;
   font-weight: bold;
-  
-  padding: 1.5px;
-  
-  margin-left: 2em;
-  margin-right: 2em;
+
+  padding-left: 1.2em;
+  padding-right: 1.2em;
 }
 
-.nav>a:hover {
-  color: white;
-  background-color: black;
+.nav a:hover {
   text-decoration: none;
+  text-shadow: 0 0 10px;
 }
 
-.logo_link {
-  background-color: none;
-  border-style: none;
-  border-color: none;
-  border-radius: none;
-  color: none;
+.nav .logo_link {
+  background-color: transparent;
+  border: none;
+  float:left;
+  position: relative;
+  top: -12px;
 }
 
 .logo {
   background-image: url(../images/logo);
   background-size: 100%;
-  
-  float: left;
-  
-  width:  25px;
-  height: 25px;
+
+  width:  64px;
+  height: 64px;
 }
 
 .equation {
   background-image: url(../images/opal-phaser-equation);
-  
-  width: 918.3999999999999px;
-  height: 15em;
-  
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100px;
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (screen and min-width: 500px) {
+  .equation { height: 180px; }
+}
+
+@media (screen and min-width: 1000px) {
+  .equation { height: 250px; }
+}
+
+.jumbotron { background: none; }
 
 .header_text_center {
   color: white;
   text-shadow: 0 0 15px red;
   text-align: center;
-  
+
   clear: both;
 }
 
@@ -128,33 +131,41 @@ hr {
 }
 
 #footer {
-  border-radius: 5px;
-  
   clear: both;
-  
-  width: 918px;
-  
-  margin-left: auto;
-  margin-right: auto;
-  
+  width: 100%;
   background-color: #2C3334;
   color: #CCCCCC;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 #footer a {
   color: #CCCCCC;
+  background: transparent;
 }
 
-#footer_logo {
-  margin-top: 10px;
-  margin-left: 20px;
-  
-  width: 50px;
-  height: 50px;
+#footer .logo_link {
+  display:block;
+  text-align: center;
 }
 
-#footer_content {
-  width: 800px;
+#footer .logo {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+#footer h3 {color: white }
+
+#footer ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0
+}
+
+#footer ul a:hover {
+  // text-decoration: underline;
+  color: white;
 }
 
 .borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
@@ -164,30 +175,5 @@ hr {
 #copyright {
   margin-left: 0.5em;
   color: gray;
-}
-
-#example {
-  width: 806px;
-  height: 605px;
-  
-  border-style: solid;
-  border-color: gray;
-  border-radius: 5px;
-  
-  float: right;
-  
-  margin-right: 2em;
-}
-
-pre {
-  width: 806px;
-  
-  float: right;
-  
-  margin-right: 2em;
-}
-
-#example_index{
-  float: left;
-  margin-left: 12.857142857142858em;
+  text-align: center;
 }

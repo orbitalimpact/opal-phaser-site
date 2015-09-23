@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.2.3'
 
 gem 'volt', '0.9.5'
 gem 'volt-mongo'
@@ -17,7 +17,7 @@ gem 'websocket-driver', '0.5.4'
 gem 'volt-bootstrap', '~> 0.0.10'
 
 # Simple theme for bootstrap, remove to theme yourself.
-gem 'volt-bootstrap_jumbotron_theme', '~> 0.1.0'
+# gem 'volt-bootstrap_jumbotron_theme', '~> 0.1.0'
 
 # User templates for login, signup, and logout menu.
 gem 'volt-user_templates', '~> 0.1.3'
