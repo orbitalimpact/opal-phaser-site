@@ -16,7 +16,7 @@ if RUBY_ENGINE == 'opal'
         sprite = @game.add.sprite(-400, 0, @sprite_key)
         tween  = @game.add.tween(sprite)
     
-        tween.to({ x: 600 }, 6000)
+        tween.to(properties: { x: 600 }, duration: 6000)
         tween.start
       end
     end
