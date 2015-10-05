@@ -1,7 +1,7 @@
 Volt.configure do |config|
   # Setup your global app config here.
   config.db_driver = 'mongo'
-  config.db_name = (config.app_name + '_' + Volt.env.to_s)
+  #config.db_name = (config.app_name + '_' + Volt.env.to_s)
 
   if ENV['MONGOLAB_URI'].present?
     config.db_uri = ENV['MONGOLAB_URI']
