@@ -6,19 +6,25 @@ GIT
 
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: 6b215d2c376c028c869732b7b72dc7c94fd4bb77
+  revision: 41c608143dc9fabc37b6c4a33539539214f5fb4b
   specs:
     opal-phaser (0.3.0)
       opal (>= 0.8.0, <= 0.9.0)
       opal-pixi
 
+PATH
+  remote: ../../volt-mongo
+  specs:
+    volt-mongo (0.1.1)
+      mongo (~> 1.12.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     bcrypt (3.1.10)
-    bson (1.9.2)
-    bson_ext (1.9.2)
-      bson (~> 1.9.2)
+    bson (1.12.3)
+    bson_ext (1.12.3)
+      bson (~> 1.12.3)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -52,12 +58,12 @@ GEM
     method_source (0.8.2)
     mime-types (2.6.2)
     mini_portile (0.6.2)
-    mongo (1.9.2)
-      bson (~> 1.9.2)
+    mongo (1.12.3)
+      bson (= 1.12.3)
     multi_json (1.11.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    opal (0.8.0)
+    opal (0.8.1)
       hike (~> 1.2)
       sourcemap (~> 0.1.0)
       sprockets (~> 3.1)
@@ -100,7 +106,7 @@ GEM
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
     rubyzip (1.1.7)
-    sass (3.4.18)
+    sass (3.4.19)
     selenium-webdriver (2.43.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
@@ -108,7 +114,7 @@ GEM
       websocket (~> 1.0)
     slop (3.6.0)
     sourcemap (0.1.1)
-    sprockets (3.3.5)
+    sprockets (3.4.0)
       rack (> 1, < 3)
     sprockets-helpers (1.2.1)
       sprockets (>= 2.2)
@@ -136,8 +142,6 @@ GEM
       thor (~> 0.19.0)
     volt-bootstrap (0.0.10)
     volt-fields (0.1.3)
-    volt-mongo (0.1.1)
-      mongo (~> 1.9.0)
     volt-user_templates (0.1.7)
       volt-fields (~> 0.1.0)
     websocket (1.2.2)
@@ -151,7 +155,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bson_ext (~> 1.9.0)
+  bson_ext
   capybara (~> 2.4.2)
   chromedriver2-helper (~> 0.0.8)
   csso-rails (~> 0.3.4)
@@ -168,7 +172,7 @@ DEPENDENCIES
   volt (= 0.9.5)
   volt-bootstrap (~> 0.0.10)
   volt-code_highlight!
-  volt-mongo
+  volt-mongo!
   volt-user_templates (~> 0.1.3)
   websocket-driver (= 0.5.4)
 

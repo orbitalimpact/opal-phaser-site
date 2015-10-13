@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 gem 'volt', '0.9.5'
-gem 'volt-mongo'
+gem 'volt-mongo', path: '../../volt-mongo'#, github: 'ylluminarious/volt-mongo'
 
 gem 'opal-phaser', git: 'https://github.com/orbitalimpact/opal-phaser.git'
 
@@ -42,5 +42,5 @@ end
 # Server for MRI
 platform :mri do
   gem 'thin', '~> 1.6.0'
-  gem 'bson_ext', '~> 1.9.0'
+  gem 'bson_ext'#, '~> 1.9.0'
 end
