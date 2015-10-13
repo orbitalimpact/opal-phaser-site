@@ -5,18 +5,19 @@ GIT
     volt-code_highlight (0.1.0)
 
 GIT
+  remote: git://github.com/ylluminarious/volt-mongo.git
+  revision: c86043959000bf4515486ed9707e84800994c6c0
+  specs:
+    volt-mongo (0.1.1)
+      mongo (~> 1.12.0)
+
+GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
   revision: 41c608143dc9fabc37b6c4a33539539214f5fb4b
   specs:
     opal-phaser (0.3.0)
       opal (>= 0.8.0, <= 0.9.0)
       opal-pixi
-
-PATH
-  remote: ../../volt-mongo
-  specs:
-    volt-mongo (0.1.1)
-      mongo (~> 1.12.0)
 
 GEM
   remote: https://rubygems.org/
