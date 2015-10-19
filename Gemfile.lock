@@ -13,9 +13,9 @@ GIT
 
 GIT
   remote: https://github.com/orbitalimpact/opal-phaser.git
-  revision: 41c608143dc9fabc37b6c4a33539539214f5fb4b
+  revision: d89750338b5bedf5e734c30271042cffaf3408af
   specs:
-    opal-phaser (0.3.0)
+    opal-phaser (0.4.5)
       opal (>= 0.8.0, <= 0.9.0)
       opal-pixi
 
@@ -78,7 +78,7 @@ GEM
       cliver (~> 0.3.1)
       multi_json (~> 1.0)
       websocket-driver (>= 0.2.0)
-    pry (0.10.2)
+    pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -90,7 +90,7 @@ GEM
       ffi (>= 0.5.0)
     rbnacl (3.2.0)
       ffi
-    rbnacl-libsodium (1.0.3)
+    rbnacl-libsodium (1.0.4)
       rbnacl (~> 3.0, >= 3.0.1)
     ref (1.0.5)
     rspec (3.2.0)
